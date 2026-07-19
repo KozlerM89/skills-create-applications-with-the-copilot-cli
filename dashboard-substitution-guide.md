@@ -178,3 +178,60 @@ Choose **Option A** (Generative Page — fast, AI-assisted) or **Option B** (Cus
 - Upload your exported solution `.zip` file
 - Share the **environment URL** and **solution name**
 - Indicate whether you chose Generative Page or Custom Page so refinements can continue
+
+---
+
+## Appendix: Spec-Kit Workflow (Recommended for future features)
+
+This project is configured with **[GitHub Spec Kit](https://github.com/github/spec-kit) v0.13.0** integrated with GitHub Copilot CLI. Use the slash commands below in your Copilot CLI session to drive any future feature work using Spec-Driven Development.
+
+### Quick-Start Commands
+
+```bash
+# 1. Establish / update project principles
+/speckit.constitution Create principles focused on modern UX using Fluent UI,
+Dataverse-first data access, solution-based packaging, and Power Platform best practices.
+
+# 2. Define what you want to build
+/speckit.specify Replace the Contact Interactive Dashboard in the Model-Driven App
+with a modern Custom Page using Creator Kit (DetailsList, SearchBox, CommandBar).
+
+# 3. Clarify any gaps (optional but recommended)
+/speckit.clarify
+
+# 4. Generate a technical plan
+/speckit.plan Use Power Apps Custom Page (canvas), Creator Kit Fluent UI components,
+Dataverse Contacts table, solution-based deployment.
+
+# 5. Break plan into tasks
+/speckit.tasks
+
+# 6. Execute all tasks
+/speckit.implement
+
+# 7. Check for remaining gaps after implementation
+/speckit.converge
+```
+
+### Command Reference
+
+| Command | Description |
+|---|---|
+| `/speckit.constitution` | Create or update project governing principles |
+| `/speckit.specify` | Define what you want to build (requirements & user stories) |
+| `/speckit.clarify` | AI asks up to 5 targeted questions to fill spec gaps |
+| `/speckit.plan` | Create technical implementation plan |
+| `/speckit.tasks` | Generate actionable task list from the plan |
+| `/speckit.implement` | Execute all tasks and build the feature |
+| `/speckit.converge` | Assess codebase vs spec and append any remaining work |
+
+### Project Constitution
+
+The project constitution is stored at `.specify/memory/constitution.md`. It establishes:
+- **Dataverse-First** data access
+- **Solution Packaging** for all components
+- **Fluent UI / Creator Kit** for all new pages
+- **Spec-Driven Development** as the mandatory workflow
+- **Security-Role Compliance** for every new component
+
+Run `/speckit.constitution` in any session to view or amend these principles.
